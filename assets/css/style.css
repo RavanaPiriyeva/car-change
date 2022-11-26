@@ -1,0 +1,685 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.411), rgba(2, 2, 2, 0.089)), url("../img/6c1d8510b5c7098349eb27b1334c70fe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 10px;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: relative;
+}
+
+header button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  transition: all 1s;
+  border-radius: 5px;
+}
+
+header button:hover {
+  box-shadow: 0px 0px 15px 10px;
+}
+
+header .navbar {
+  background-color: rgba(122, 51, 51, 0.575);
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .navbar .logo h1 {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+header .navbar .nav {
+  width: 30%;
+}
+
+@media screen and (max-width: 920px) {
+  header .navbar .nav {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header .navbar .nav {
+    display: none;
+  }
+}
+
+header .navbar .nav ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+header .navbar .nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+header .navbar .nav li {
+  list-style: none;
+  transition: all 0.5s;
+}
+
+header .navbar .nav li:hover {
+  text-shadow: 1px 1px 10px white;
+}
+
+header .navbar .menu {
+  display: none;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  header .navbar .menu {
+    display: block;
+  }
+}
+
+header #slider {
+  padding: 100px 60px 0px;
+  text-align: end;
+  color: white;
+}
+
+header #slider h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+header #slider p {
+  margin: 40px 0;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  line-height: 30px;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+header #slider button {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+header .icon {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.312);
+}
+
+header .icon .right,
+header .icon .left {
+  font-size: 50px;
+  position: absolute;
+}
+
+header .icon .left {
+  top: 50%;
+  left: 20px;
+}
+
+header .icon .right {
+  top: 50%;
+  right: 20px;
+}
+
+header .icon span {
+  margin: 0 5px;
+  padding: 10px 0;
+}
+
+header .icon span:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+main {
+  background-color: black;
+  color: white;
+  padding: 0 30px;
+}
+
+main #about {
+  padding: 100px 0 0;
+}
+
+main #about h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+main #about .content {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main #about .content div {
+  padding: 20px 0;
+  width: 40%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  main #about .content div {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+main #about .content div p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 920px) {
+  main #about .content div p {
+    font-size: 15px;
+  }
+}
+
+main #about .content div img {
+  max-width: 100%;
+}
+
+main #benefit {
+  padding: 100px 0 0;
+}
+
+main #benefit .benefit {
+  background-color: #131318;
+  position: relative;
+  overflow: hidden;
+}
+
+main #benefit .benefit .circle1,
+main #benefit .benefit .circle2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #00ff80;
+  border-radius: 50%;
+}
+
+main #benefit .benefit .circle1 div,
+main #benefit .benefit .circle2 div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #006eff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+main #benefit .benefit .circle2 {
+  bottom: -55px;
+  right: -45px;
+}
+
+main #benefit .benefit .circle2 div {
+  bottom: 15px;
+  right: 15px;
+}
+
+main #benefit .benefit .circle1 {
+  top: -55px;
+  left: -45px;
+}
+
+main #benefit .benefit .circle1 div {
+  left: 15px;
+  top: 15px;
+}
+
+main #benefit h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 50px 0 0 0;
+}
+
+main #benefit p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+}
+
+main #benefit .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px 0;
+  flex-wrap: wrap;
+}
+
+main #benefit .content .item1,
+main #benefit .content .item2,
+main #benefit .content .item3 {
+  width: 20%;
+  text-align: center;
+  position: relative;
+  padding: 70px 20px 0;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 920px) {
+  main #benefit .content .item1,
+  main #benefit .content .item2,
+  main #benefit .content .item3 {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+}
+
+main #benefit .content .item1 .img,
+main #benefit .content .item2 .img,
+main #benefit .content .item3 .img {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%, 0);
+  max-width: 100px;
+}
+
+main #benefit .content .item1 .img img,
+main #benefit .content .item2 .img img,
+main #benefit .content .item3 .img img {
+  max-width: 100%;
+}
+
+main #benefit .content .item1 h3,
+main #benefit .content .item2 h3,
+main #benefit .content .item3 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 0 0 0;
+}
+
+main #benefit .content .item1 {
+  background-color: #26b17b;
+}
+
+main #benefit .content .item2 {
+  background-color: #a82525;
+}
+
+main #benefit .content .item3 {
+  background-color: #1d4f9b;
+}
+
+main #benefit .content .item3 .img {
+  max-width: 80px;
+}
+
+main #car {
+  margin: 50px 0 0 0;
+  padding: 100px 0 0;
+}
+
+main #car h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 50px 0 0 0;
+}
+
+main #car p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+}
+
+main #car .content {
+  margin: 50px 0;
+}
+
+main #car .item {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0 auto;
+}
+
+main #car .item .img {
+  width: 25%;
+  height: 200px;
+  overflow: hidden;
+  object-position: center;
+  padding: 0;
+  position: relative;
+}
+
+main #car .item .img:hover .text {
+  width: 80%;
+}
+
+main #car .item .img:hover img {
+  opacity: 0.2;
+}
+
+main #car .item .img .text {
+  text-align: center;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 1.5s;
+}
+
+main #car .item .img .text p {
+  padding: 20px 0;
+}
+
+main #car .item .img .text button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  transition: all 1s;
+  border-radius: 5px;
+}
+
+main #car .item .img .text button:hover {
+  box-shadow: 0px 0px 15px 10px;
+}
+
+@media screen and (max-width: 920px) {
+  main #car .item .img {
+    width: 50%;
+  }
+}
+
+main #car .item .img img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  transition: all 1s;
+}
+
+main #video {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+main #video .video {
+  position: relative;
+}
+
+main #video .video .circle1,
+main #video .video .circle2 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 2px solid #00ff80;
+  transform: rotate(40deg);
+}
+
+main #video .video .circle1 div,
+main #video .video .circle2 div {
+  width: 130px;
+  height: 130px;
+  border: 2px solid #00ff80;
+  transform: rotate(20deg);
+  position: absolute;
+}
+
+main #video .video .circle2 {
+  bottom: -55px;
+  right: -45px;
+  z-index: 1;
+  border: 3px solid #00ff80;
+}
+
+main #video .video .circle2 div {
+  bottom: 15px;
+  right: 15px;
+  border: 3px solid #00ff80;
+}
+
+main #video .video .circle1 {
+  top: -55px;
+  left: -45px;
+}
+
+main #video .video .circle1 div {
+  left: 15px;
+  top: 15px;
+}
+
+main #video .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 30px 0;
+}
+
+main #video .text h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+main #video .text p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  width: 20%;
+  letter-spacing: 5px;
+}
+
+main #video .img {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main #video .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 80%;
+}
+
+main #video .img .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0.274);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #video .img .icon i {
+  display: block;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .map {
+  padding: 50px 0 0 0;
+}
+
+footer .map iframe {
+  width: 100%;
+}
+
+footer .text {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .text h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+
+footer .text ul {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+footer .text ul li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+footer .text ul li:hover {
+  text-shadow: 1px 1px 10px white;
+  padding-left: 5px;
+}
+
+footer .text ul .icon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 20px white;
+}
+
+footer .text ul .icon:hover {
+  padding: 0;
+}
+
+footer .text ul .icon i:hover {
+  text-shadow: 1px 1px 20px red;
+}
+
+footer .text h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+footer .text .gettop {
+  padding: 20px;
+  text-align: center;
+}
+
+footer .text .gettop .img {
+  background-color: #971414;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  position: sticky;
+}
+
+footer .text .gettop:hover {
+  padding: 20px;
+  opacity: 0.5;
+}
+
+footer .bottom {
+  background-color: #131212;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 15px;
+}
+
+footer .bottom .main {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes example {
+  0% {
+    margin-right: 0%;
+  }
+  50% {
+    margin-right: 10%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+
+@keyframes animatedBackgroundRight {
+  from {
+    background-position: 100vw 50%;
+  }
+  to {
+    background-position: center;
+  }
+}
+
+@keyframes animatedBackgroundLeft {
+  from {
+    background-position: -100vw 50%;
+  }
+  to {
+    background-position: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
